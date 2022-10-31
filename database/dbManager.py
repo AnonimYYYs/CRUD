@@ -1,5 +1,6 @@
-import psycopg2
-import os, json
+# todo() import psycopg2
+import json
+import os
 
 
 class DatabaseManager:
