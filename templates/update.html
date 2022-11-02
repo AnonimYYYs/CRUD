@@ -9,10 +9,29 @@
 
         {% include 'header.html' %}
 
-        <h1>База данных</h1>
-        <h3>update_div</h3>
+        <h1>Изменение строки</h1>
         <div id="update_div">
-
+            <h3>Введите номер строки и параметры, которые нужно изменить. <br> Параметры для которых изменений не требуется - оставьте пустыми</h3>
+            <form action="/update" method="POST">
+                <div class="update_data_input_row">
+                    <input type="text" id="update_insert_id" name="update_id" />
+                    <p>id</p>
+                </div>
+                <br>
+                <div class="update_data_input_row">
+                    <input type="text" id="update_insert_name" name="update_name" />
+                    <p>name</p>
+                </div>
+                <div class="update_data_input_row">
+                    <input type="text" id="update_insert_desc" name="update_desc" />
+                    <p>description</p>
+                </div>
+                <div class="update_data_input_row">
+                    <input type="text" id="update_insert_hash" name="update_hash" />
+                    <p>hash</p>
+                </div>
+                <input id="update_button" type="submit" value="Изменить строку" />
+            </form>
         </div>
 
         {% with table_data=data %}

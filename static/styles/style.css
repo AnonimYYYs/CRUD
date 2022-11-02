@@ -5,6 +5,31 @@
     padding: 5px;
 }
 
- header {
-    color: #f00;
- }
+#data_table {
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.header_input {
+    margin: 5px;
+    padding: 5px;
+}
+
+.insert_data_input_row {
+    display: flex;
+}
+
+.insert_data_input_row * {
+    margin: 10px;
+}
+
+
+.update_data_input_row {
+    display: flex;
+}
+
+.update_data_input_row * {
+    margin: 10px;
+}

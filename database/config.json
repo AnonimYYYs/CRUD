@@ -1,0 +1,8 @@
+{
+  "DB_NAME": "crud-laba",
+  "SUPERUSER": "crud-user",
+  "SUPERUSER_PASSWORD": "1234",
+  "HOST": "localhost",
+  "PORT": "5432",
+  "TABLE_NAME": "main_table"
+}

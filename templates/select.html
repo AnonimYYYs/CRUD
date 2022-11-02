@@ -9,11 +9,13 @@
 
         {% include 'header.html' %}
 
-        <h1>База данных</h1>
-
-        <h3>select_div</h3>
+        <h1>Сортировка по хэшу</h1>
         <div id="select_div">
-
+            <h3>Введите хэш, по которому надо отсортировать или оставьте поле пустым, чтобы вывести ве значения</h3>
+            <form action="/select">
+                <input type="text" id="select_input_name" name="select_hash" />
+                <input id="select_button" type="submit" value="Сортировать" />
+            </form>
         </div>
 
         {% with table_data=data %}

@@ -9,11 +9,26 @@
 
         {% include 'header.html' %}
 
-        <h1>База данных</h1>
-        <h3>insert_div</h3>
+        <h1>Добавление строки</h1>
         <div id="insert_div">
-
+            <h3>Введите значения для новой строки</h3>
+            <form action="/insert" method="POST">
+                <div class="insert_data_input_row">
+                    <input type="text" id="input_insert_name" name="insert_name" />
+                    <p>name</p>
+                </div>
+                <div class="insert_data_input_row">
+                    <input type="text" id="input_insert_desc" name="insert_desc" />
+                    <p>description</p>
+                </div>
+                <div class="insert_data_input_row">
+                    <input type="text" id="input_insert_hash" name="insert_hash" />
+                    <p>hash</p>
+                </div>
+                <input id="insert_button" type="submit" value="Добавить строку" />
+            </form>
         </div>
+
 
         {% with table_data=data %}
             {% include 'table.html' %}

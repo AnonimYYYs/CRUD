@@ -9,10 +9,13 @@
 
         {% include 'header.html' %}
 
-        <h1>База данных</h1>
-        <h3>delete_div</h3>
+        <h1>Удаление строки</h1>
         <div id="delete_div">
-
+            <h3>Выберите номер строки, которую надо удалить</h3>
+            <form action="/delete" method="POST">
+                <input type="text" id="delete_input_name" name="delete_row" />
+                <input id="delete_button" type="submit" value="Удалить строку" />
+            </form>
         </div>
 
         {% with table_data=data %}
