@@ -73,9 +73,3 @@ class DatabaseManager:
 
 def return_dull_db_select():
     return [(1, 'item1', 'sdasdasdfqfqw', 123), (2, 'item2', 'ddddddaaassaaaassa', None), (3, 'not item', 'dd', 11), (4, 'also item', 'qwwqqqwqwqwqqwqwwqdqwdshhfsh', 11)]
-
-if __name__ == "__main__":
-
-    from database.dbManager import DatabaseManager
-    db = DatabaseManager()
-    result = db.select_all()

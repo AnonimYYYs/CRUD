@@ -114,4 +114,4 @@ def insert_page():
         return render_template('insert.html', data=data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
